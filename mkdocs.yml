@@ -1,0 +1,68 @@
+site_name: Cloudflare Workers中文文档
+site_url: https://www.heapoverflow.cn/cf-workers/
+site_description: Cloudflare Workers中文文档
+
+repo_url: https://github.com/thetechstack/cf-workers
+edit_uri: edit/main/docs
+
+copyright: Copyright &copy; 2022 面向问题编程
+
+theme:
+  name: material
+  font:
+    text: Ubuntu
+    code: Source Code Pro
+  language: zh
+  features:
+    - navigation.tabs
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - 首页: index.md
+  - 示例:
+      - 返回HTML: examples/return-small-html-page.md
+      - 返回JSON: examples/return-json.md
+      - 获取外部数据:
+        - 请求外部HTML: examples/fetch-html.md
+        - 请求外部JSON: examples/fetch-json.md
+        - 返回另一个站点的响应: examples/respond-with-another-site.md
+      - 重定向: examples/redirects.md

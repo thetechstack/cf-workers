@@ -56,6 +56,11 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+extra:
+  social:
+    - icon: fontawesome/brands/cloudflare
+      link: https://workers.cloudflare.com/
+
 nav:
   - 首页: index.md
   - 示例:
@@ -66,3 +71,4 @@ nav:
         - 请求外部JSON: examples/fetch-json.md
         - 返回另一个站点的响应: examples/respond-with-another-site.md
       - 重定向: examples/redirects.md
+      - 防盗链: examples/hot-link-protection.md
